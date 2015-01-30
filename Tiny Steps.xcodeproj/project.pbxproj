@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0109DF621A7C293D007E81E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109DF611A7C293D007E81E6 /* AppDelegate.swift */; };
-		0109DF641A7C293D007E81E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109DF631A7C293D007E81E6 /* ViewController.swift */; };
 		0109DF671A7C293D007E81E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0109DF651A7C293D007E81E6 /* Main.storyboard */; };
 		0109DF691A7C293D007E81E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0109DF681A7C293D007E81E6 /* Images.xcassets */; };
 		0109DF6C1A7C293D007E81E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0109DF6A1A7C293D007E81E6 /* LaunchScreen.xib */; };
@@ -24,6 +23,7 @@
 		0109DF921A7C3147007E81E6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0109DF911A7C3147007E81E6 /* SystemConfiguration.framework */; };
 		0109DF941A7C3152007E81E6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0109DF931A7C3152007E81E6 /* libz.dylib */; };
 		0109DF961A7C3159007E81E6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0109DF951A7C3159007E81E6 /* libsqlite3.dylib */; };
+		01362CA81A7C369E00E0C077 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01362CA71A7C369E00E0C077 /* LoginViewController.swift */; };
 		E5F500E0DDD50635A22D514A /* libPods-Tiny Steps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90121247E0DB12A850891FB4 /* libPods-Tiny Steps.a */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,6 @@
 		0109DF5C1A7C293D007E81E6 /* Tiny Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Steps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0109DF601A7C293D007E81E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0109DF611A7C293D007E81E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0109DF631A7C293D007E81E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0109DF661A7C293D007E81E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0109DF681A7C293D007E81E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0109DF6B1A7C293D007E81E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		0109DF931A7C3152007E81E6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		0109DF951A7C3159007E81E6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		01362CA31A7C325200E0C077 /* Tiny Steps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tiny Steps-Bridging-Header.h"; sourceTree = "<group>"; };
+		01362CA71A7C369E00E0C077 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		888CA784E11E00AF1797BB9D /* Pods-Tiny Steps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiny Steps.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tiny Steps/Pods-Tiny Steps.release.xcconfig"; sourceTree = "<group>"; };
 		90121247E0DB12A850891FB4 /* libPods-Tiny Steps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tiny Steps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DA2263061D4E184E69C840 /* Pods-Tiny Steps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiny Steps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tiny Steps/Pods-Tiny Steps.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,8 +118,8 @@
 		0109DF5E1A7C293D007E81E6 /* Tiny Steps */ = {
 			isa = PBXGroup;
 			children = (
+				01362CA61A7C367600E0C077 /* View Controllers */,
 				0109DF611A7C293D007E81E6 /* AppDelegate.swift */,
-				0109DF631A7C293D007E81E6 /* ViewController.swift */,
 				0109DF651A7C293D007E81E6 /* Main.storyboard */,
 				0109DF681A7C293D007E81E6 /* Images.xcassets */,
 				0109DF6A1A7C293D007E81E6 /* LaunchScreen.xib */,
@@ -152,6 +152,14 @@
 				0109DF761A7C293D007E81E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01362CA61A7C367600E0C077 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01362CA71A7C369E00E0C077 /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		5E9ECAE75E1EC56FE8C7D71A /* Pods */ = {
@@ -317,7 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0109DF641A7C293D007E81E6 /* ViewController.swift in Sources */,
+				01362CA81A7C369E00E0C077 /* LoginViewController.swift in Sources */,
 				0109DF621A7C293D007E81E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
